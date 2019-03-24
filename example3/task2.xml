@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template match="/">
+		<html>
+			<head>
+				<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #cc3399;
+    color: white;
+
+}
+				</style>
+			</head>
+			<body>
+				<h2>student info</h2>
+				<table>
+					<tr >
+						<th>comapanyname</th>
+						<th>establish</th>
+						<th>type</th>
+
+					</tr>
+					<tr>
+						<td><xsl:value-of select="company/companyname"/></td>
+						<td><xsl:value-of select="company/establish"/></td>
+						<td><xsl:value-of select="company/type"/></td> 
+					</tr>
+				</table>
+				<table border="1">
+					<tr bgcolor="#9acd32">
+						<th>name </th>
+						<th>surname</th>
+					</tr>
+
+					<xsl:for-each select="company/department[@Name='developer']/employee">
+
+						<tr>
+							<td>  <xsl:value-of select="name"/></td>
+							<td> <xsl:value-of select="surname"/></td>
+						</tr>
+
+					</xsl:for-each>
+				</table>
+				<table border="1">
+					<tr bgcolor="#9acd32">
+						<th>name </th>
+						<th>surname</th>
+					</tr>
+					<xsl:for-each select="company/department[@Name='management']/employee">
+						<tr>
+							<td>  <xsl:value-of select="name"/></td>
+							<td> <xsl:value-of select="surname"/></td>
+						</tr>
+					</xsl:for-each>
+				</table>
+				<table border="1">
+					<tr bgcolor="#9acd32">
+						<th>name </th>
+						<th>surname</th>
+					</tr>
+
+					<xsl:for-each select="company/department[@Name='hr']/employee">
+
+						<tr>
+							<td>  <xsl:value-of select="name"/></td>
+							<td> <xsl:value-of select="surname"/></td>
+						</tr>
+
+					</xsl:for-each>
+				</table>
+			</body>
+		</html>
+	</xsl:template>
+</xsl:stylesheet>

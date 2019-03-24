@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+  <html>
+  <body>
+    <h2>mail.com</h2>
+<span> From:<xsl:value-of select="Mail/To"/></span> <br/>
+To:<xsl:value-of select="Mail/From"/>
+
+<p>Dear <xsl:value-of select="Mail/Author"/></p>
+<p>Your paper under the title:<xsl:value-of select="Mail/ID"/>under the id Number:<xsl:value-of select="Mail/ID/@Number"/> was successfully uploaded to a DepCoS-RELCOMEX <br/>conference. </p>
+<p> You can check that the file is correctly uploaded by following this link:<a href="http://google.com">Documents</a></p>
+<p> Thanks for submitting to DepCoS-RELCOMEX 201x. Until the deadline, you
+</p>
+<p>can still update your information or transmit a revised file.
+</p>
+<p> Best regards,</p>
+<p> DepCoS-RELCOMEX chairs.  </p>
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>

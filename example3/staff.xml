@@ -1,0 +1,61 @@
+<company>
+<companyname>mtechinfotech</companyname>
+<Type>IT</Type>
+<establish>1965</establish>
+<department name="developer">
+<employee id="1">
+<name>chetan</name>
+<surname>parmar</surname>
+<mobile>729531662</mobile>
+<email>parmar.chetan91@gmail.com</email>
+<address>witiiga-4,DST-16</address>
+<city>wroclaw</city>
+</employee>
+<employee id="2">
+<name>steven</name>
+<surname>rutherford</surname>
+<mobile>729531633</mobile>
+<email>steve.ruther@gmail.com</email>
+<address>ul.grunwaldzka 57</address>
+<city>wroclaw</city>
+</employee>
+</department>
+<department name="management">
+<employee id="44">
+<name>elena</name>
+<surname>maryk</surname>
+<mobile>729531666</mobile>
+<email>elena.maryk@gmail.com</email>
+<address>witiiga-4,DST-16</address>
+<city>wroclaw</city>
+</employee>
+<employee id="46">
+<name>maschej</name>
+<surname>krukowski</surname>
+<mobile>729531532</mobile>
+<email>kruk1199@gmail.com</email>
+<address>ul.srobosky </address>
+<city>wroclaw</city>
+</employee>
+</department>
+<department name="hr">
+<employee id="12">
+<name>julia</name>
+<surname>steffen</surname>
+<mobile>729531112</mobile>
+<email>jul.stf@gmail.com</email>
+<address>ul.grunwaldzka 44</address>
+<city>wroclaw</city>
+</employee>
+<employee id="22">
+<name>jakun</name>
+<surname>brozowski</surname>
+<mobile>729531662</mobile>
+<email>parmar.chetan91@gmail.com</email>
+<address>ul.grunwaldzka 59</address>
+<city>wroclaw</city>
+</employee>
+</department>
+</company>
+
+
